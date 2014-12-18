@@ -1,0 +1,81 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.xxfff.utls</groupId>
+  <artifactId>PDM</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>PDM</name>
+  <description>PDM Utils</description>
+  
+  <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.6</java.version>
+		<project.junit.version>4.10</project.junit.version>
+		<project.spring.version>3.1.1.RELEASE</project.spring.version>
+		<project.cglib.version>2.1_3</project.cglib.version>
+		<project.mybatis.version>3.1.1</project.mybatis.version>
+		<project.mybatis.spring.version>1.1.1</project.mybatis.spring.version>
+		<project.mysql.version>5.1.20</project.mysql.version>
+		<project.antlr.version>2.7.7</project.antlr.version>
+		<project.aspectj.version>1.6.12</project.aspectj.version>
+		<project.log4j.version>1.2.16</project.log4j.version>
+		<project.dom4j.version>1.6.1</project.dom4j.version>
+		<project.slf4j.version>1.6.6</project.slf4j.version>
+		<project.commons-pool.version>1.6</project.commons-pool.version>
+		<project.commons-dbcp.version>1.4</project.commons-dbcp.version>
+		<project.commons-io.version>2.3</project.commons-io.version>
+		<project.commons-fileupload.version>1.2.2
+		</project.commons-fileupload.version>
+		<project.javaee.version>5</project.javaee.version>
+		<project.jsf.version>2.1.8</project.jsf.version>
+		<project.jstl.version>1.2</project.jstl.version>
+		<project.jsp.version>2.1</project.jsp.version>
+		<project.c3p0.version>0.9.1.2</project.c3p0.version>
+		<project.mchange-commons-java.version>0.2.1-RELEASE
+		</project.mchange-commons-java.version>
+		<project.ehcache.version>2.6.0</project.ehcache.version>
+		<project.poi.version>3.9</project.poi.version>
+		<project.poi.ooxml>3.9</project.poi.ooxml>
+		<project.jxl.version>2.6</project.jxl.version>
+		<project.json.version>1.8.4</project.json.version>
+		<project.javamail.version>1.4.7</project.javamail.version>
+		<joda-time.version>2.2.1.1</joda-time.version>
+		<project.pinyin4j.version>2.5.0</project.pinyin4j.version>
+		<project.base64.version>1.8</project.base64.version>
+		<project.kaptcha.version>2.3</project.kaptcha.version>
+		<project.poi.version>3.9</project.poi.version>
+		<project.joda-time.version>2.3</project.joda-time.version>
+		<project.freemarker.version>2.3.20</project.freemarker.version>
+		<project.jackson.version>1.9.13</project.jackson.version>
+		<project.jaxen.version>1.1.4</project.jaxen.version>
+		<project.ueditor.version>1.0.1</project.ueditor.version>
+		<project.slf4j-log4j>1.7.5</project.slf4j-log4j>
+	</properties>
+	
+	<dependencies>
+		<!--Start Junit的所有依赖包 -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${project.junit.version}</version>
+		</dependency>
+		<!--End Junit的所有依赖包 -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${project.slf4j-log4j}</version>
+		</dependency>
+		
+		<!--Start Dom4j支持包 -->
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>${project.dom4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>jaxen</groupId>
+			<artifactId>jaxen</artifactId>
+			<version>${project.jaxen.version}</version>
+		</dependency>
+		<!--End Dom4j支持包 -->
+	</dependencies>
+</project>
