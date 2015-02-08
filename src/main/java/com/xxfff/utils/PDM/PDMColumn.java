@@ -1,7 +1,5 @@
 package com.xxfff.utils.PDM;
 
-import com.xxfff.utils.PDM.tools.TypeConvert;
-
 public class PDMColumn {
 	private String id;
 	private String name;

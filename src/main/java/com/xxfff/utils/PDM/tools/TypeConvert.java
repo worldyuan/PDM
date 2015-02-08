@@ -20,8 +20,11 @@ public class TypeConvert {
 			if (value.toUpperCase().contains("TEXT")) {
 				return "String";
 			}
-			if (value.toUpperCase().contains("TINYINT") || value.toUpperCase().contains("BOOL")) {
+			if (value.toUpperCase().contains("BOOL")) {
 				return "Boolean";
+			}
+			if (value.toUpperCase().contains("TINYINT")) {
+				return "Integer";
 			}
 			if (value.toUpperCase().contains("BIGINT")) {
 				return "Long";

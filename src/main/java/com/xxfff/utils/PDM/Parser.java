@@ -3,6 +3,8 @@ package com.xxfff.utils.PDM;
 import java.io.File;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.dom4j.Document;
@@ -15,6 +17,13 @@ import com.xxfff.utils.PDM.tools.TypeConvert;
 
 public class Parser {
 	private PDM pdm = new PDM();
+	private static String[] _ignoreColumn = new String[]{"","status","creator","creattime","creatip","operator","operatip","operattime","version"};
+	private static List<String> ignoreColumn = new ArrayList<String>();
+	static{
+		for(String s: _ignoreColumn){
+			ignoreColumn.add(s.toLowerCase());
+		}
+	}
 	static Logger logger = Logger.getLogger(Parser.class.getName());
 
 	public static void main(String[] args) {
@@ -163,6 +172,11 @@ public class Parser {
 					"a:HighValue"));
 			pdmColumn.setComment(selectSingleNodeStringText(columnNode,
 					"a:Comment"));
+			
+			if(ignoreColumn.contains(pdmColumn.getCode().toLowerCase())) {
+				continue;
+			}
+			
 			columnList.add(pdmColumn);
 		}
 		return columnList;
